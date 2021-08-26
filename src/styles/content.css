@@ -1,0 +1,50 @@
+.profile__badge,
+.comments__item__badge {
+    background-color: #D9F5FF;
+    border-radius: 2px;
+    font-size: 13px;
+    padding: 3px 5px 2px;
+    white-space: nowrap;
+    margin-right: 10px;
+}
+
+.profile__badge {
+    cursor: pointer;
+}
+.comments__item__badge.comments__item__badge-red,
+.profile__badge.profile__badge-red {
+    background-color: rgb(255 217 219);
+}
+
+.comments__item__self--minor .comments__item__header {
+    flex: 1;
+}
+
+.modal-body {
+    padding: 30px;
+    min-height: 150px;
+}
+
+.modal-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 24px;
+}
+
+.modal-body fieldset{
+    display: grid;
+    grid-template-columns: 40% auto;
+    align-items: center;
+}
+
+.modal-body fieldset span {
+    order: 2;
+}
+
+.modal-body fieldset input {
+    width: 100% !important;
+}
+
+.modal-body .ui-button {
+    width: 100%;
+}

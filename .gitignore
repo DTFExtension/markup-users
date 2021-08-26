@@ -1,0 +1,8 @@
+.DS_Store
+dist/js/*
+node_modules/
+.idea
+dist.crx
+dist.pem
+dist.zip
+yarn.lock

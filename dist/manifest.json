@@ -1,0 +1,41 @@
+{
+    "name": "DTF User Remarks",
+    "version": "0.0.1",
+    "manifest_version": 2,
+    "description": "Mark users so you never forget what they have done",
+    "homepage_url": "https://dtf.ru/",
+    "icons": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    },
+    "browser_action": {
+      "default_title": "DTF  User Remarks"
+    },
+    "default_locale": "en",
+    "background": {
+      "scripts": [
+        "js/background.js"
+      ],
+      "persistent": true
+    },
+    "permissions": [
+      "https://dtf.ru/*",
+      "storage"
+    ],
+    "content_security_policy": "default-src 'self';",
+    "content_scripts": [
+      {
+        "matches": [
+          "https://dtf.ru/*"
+        ],
+        "js": [
+          "js/content.js"
+        ],
+        "css": [
+          "css/content.css"
+        ]
+      }
+    ]
+  }
+  
